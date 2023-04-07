@@ -1,0 +1,13 @@
+#Ignore Directories
+.vs/
+bin/
+dependencies/
+COG/vendor/
+COG/assets/
+
+#Ignore Extensions
+*.user
+
+#Ignore Files
+COG/src/utilities/VSGLInfoLib.h
+COG/src/utilities/VSGLInfoLib.cpp

@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9496E03-C41F-4347-BD9B-A90F95E88739}</ProjectGuid>
+    <RootNamespace>COG</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(SolutionDir)dependencies\lib\pretty_vleak;$(SolutionDir)dependencies\lib\pretty_fmod;$(SolutionDir)dependencies\lib\pretty_freetype;$(SolutionDir)dependencies\lib\pretty_sdl;$(SolutionDir)dependencies\lib\pretty_opengl;$(SolutionDir)dependencies\lib\pretty_assimp;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(ProjectName)\intermediates\$(PlatformShortName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(SolutionDir)dependencies\lib\pretty_vleak;$(SolutionDir)dependencies\lib\pretty_fmod;$(SolutionDir)dependencies\lib\pretty_freetype;$(SolutionDir)dependencies\lib\pretty_sdl;$(SolutionDir)dependencies\lib\pretty_opengl;$(SolutionDir)dependencies\lib\pretty_assimp;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(ProjectName)\intermediates\$(PlatformShortName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>$(SolutionDir)dependencies\lib\pretty_vleak;$(SolutionDir)dependencies\lib\pretty_fmod;$(SolutionDir)dependencies\lib\pretty_freetype;$(SolutionDir)dependencies\lib\pretty_sdl;$(SolutionDir)dependencies\lib\pretty_opengl;$(SolutionDir)dependencies\lib\pretty_assimp;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(ProjectName)\intermediates\$(PlatformShortName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>$(SolutionDir)dependencies\lib\pretty_vleak;$(SolutionDir)dependencies\lib\pretty_fmod;$(SolutionDir)dependencies\lib\pretty_freetype;$(SolutionDir)dependencies\lib\pretty_sdl;$(SolutionDir)dependencies\lib\pretty_opengl;$(SolutionDir)dependencies\lib\pretty_assimp;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(ProjectName)\intermediates\$(PlatformShortName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>COG_DEBUG=1;_MBCS;_CRT_SECURE_NO_WARNINGS;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;WINDOWS_IGNORE_PACKING_MISMATCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)COG\src;$(SolutionDir)COG\vendor;$(SolutionDir)dependencies\include;C:\Program Files (x86)\Visual Leak Detector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Visual Leak Detector\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;SDL2_ttf.lib;opengl32.lib;GlU32.lib;assimp.lib;freetype.lib;fmodL_vc.lib;fmodstudioL_vc.lib;vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)COG\src;$(SolutionDir)COG\vendor;$(SolutionDir)dependencies\include;C:\Program Files (x86)\Visual Leak Detector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>COG_DEBUG=1;_MBCS;_CRT_SECURE_NO_WARNINGS;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;WINDOWS_IGNORE_PACKING_MISMATCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;SDL2_ttf.lib;opengl32.lib;GlU32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>COG_RELEASE=1;_MBCS;_CRT_SECURE_NO_WARNINGS;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)COG\src;$(SolutionDir)COG\vendor;$(SolutionDir)dependencies\include;C:\Program Files (x86)\Visual Leak Detector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;SDL2_ttf.lib;opengl32.lib;GlU32.lib;assimp.lib;freetype.lib;fmod_vc.lib;fmodstudio_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>COG_RELEASE=1;_MBCS;_CRT_SECURE_NO_WARNINGS;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)COG\src;$(SolutionDir)COG\vendor;$(SolutionDir)dependencies\include;C:\Program Files (x86)\Visual Leak Detector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;SDL2_ttf.lib;opengl32.lib;GlU32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\application\SamplePlayer.cpp" />
+    <ClCompile Include="src\application\states\BeginState.cpp" />
+    <ClCompile Include="src\application\states\CreditsState.cpp" />
+    <ClCompile Include="src\application\states\EndState.cpp" />
+    <ClCompile Include="src\application\states\GuideState.cpp" />
+    <ClCompile Include="src\application\states\MenuState.cpp" />
+    <ClCompile Include="src\application\states\PlayState.cpp" />
+    <ClCompile Include="src\application\states\StoryState.cpp" />
+    <ClCompile Include="src\managers\FileManager.cpp" />
+    <ClCompile Include="src\managers\ReaderManager.cpp" />
+    <ClCompile Include="src\managers\InterfaceManager.cpp" />
+    <ClCompile Include="src\memory\Allocator.cpp" />
+    <ClCompile Include="src\physics\AABounds2D.cpp" />
+    <ClCompile Include="src\physics\AABounds3D.cpp" />
+    <ClCompile Include="src\managers\AudioManager.cpp" />
+    <ClCompile Include="src\application\Background.cpp" />
+    <ClCompile Include="src\cache\BufferCache.cpp" />
+    <ClCompile Include="src\application\Button.cpp" />
+    <ClCompile Include="src\graphics\Camera.cpp" />
+    <ClCompile Include="src\application\Cube.cpp" />
+    <ClCompile Include="src\application\Entity.cpp" />
+    <ClCompile Include="src\graphics\shaders\EntityShader.cpp" />
+    <ClCompile Include="src\cache\FontCache.cpp" />
+    <ClCompile Include="src\graphics\buffers\FrameBuffer.cpp" />
+    <ClCompile Include="src\graphics\Frustum.cpp" />
+    <ClCompile Include="src\application\GameComponent.cpp" />
+    <ClCompile Include="src\managers\GameManager.cpp" />
+    <ClCompile Include="src\application\GameObject.cpp" />
+    <ClCompile Include="src\application\states\GameState.cpp" />
+    <ClCompile Include="src\graphics\buffers\IndexBuffer.cpp" />
+    <ClCompile Include="src\managers\InputManager.cpp" />
+    <ClCompile Include="src\application\Interface.cpp" />
+    <ClCompile Include="src\graphics\shaders\InterfaceShader.cpp" />
+    <ClCompile Include="src\application\Inventory.cpp" />
+    <ClCompile Include="src\application\InventoryItem.cpp" />
+    <ClCompile Include="src\graphics\Light.cpp" />
+    <ClCompile Include="src\utilities\Log.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\utilities\MainframeTracker.cpp" />
+    <ClCompile Include="src\graphics\Material.cpp" />
+    <ClCompile Include="src\utilities\Maths.cpp" />
+    <ClCompile Include="src\application\Minimap.cpp" />
+    <ClCompile Include="src\application\MinimapWidget.cpp" />
+    <ClCompile Include="src\graphics\Model.cpp" />
+    <ClCompile Include="src\utilities\ObjLoader.cpp" />
+    <ClCompile Include="src\physics\Picker.cpp" />
+    <ClCompile Include="src\application\Player.cpp" />
+    <ClCompile Include="src\application\states\EditState.cpp" />
+    <ClCompile Include="src\application\Primitive.cpp" />
+    <ClCompile Include="src\application\Quad.cpp" />
+    <ClCompile Include="src\graphics\buffers\RenderBuffer.cpp" />
+    <ClCompile Include="src\graphics\buffers\RenderTarget.cpp" />
+    <ClCompile Include="src\managers\ResourceManager.cpp" />
+    <ClCompile Include="src\managers\ScreenManager.cpp" />
+    <ClCompile Include="src\graphics\shaders\Shader.cpp" />
+    <ClCompile Include="src\application\Skybox.cpp" />
+    <ClCompile Include="src\graphics\shaders\SkyboxShader.cpp" />
+    <ClCompile Include="src\application\Sprite.cpp" />
+    <ClCompile Include="src\application\Terrain.cpp" />
+    <ClCompile Include="src\graphics\shaders\TerrainShader.cpp" />
+    <ClCompile Include="src\graphics\Text.cpp" />
+    <ClCompile Include="src\graphics\shaders\TextShader.cpp" />
+    <ClCompile Include="src\graphics\Texture.cpp" />
+    <ClCompile Include="src\cache\TextureCache.cpp" />
+    <ClCompile Include="src\graphics\TexturePack.cpp" />
+    <ClCompile Include="src\utilities\String.cpp" />
+    <ClCompile Include="src\utilities\Timer.cpp" />
+    <ClCompile Include="src\utilities\Timestep.cpp" />
+    <ClCompile Include="src\utilities\Tools.cpp" />
+    <ClCompile Include="src\physics\Transform.cpp" />
+    <ClCompile Include="src\graphics\buffers\UniformBuffer.cpp" />
+    <ClCompile Include="src\graphics\buffers\VertexArray.cpp" />
+    <ClCompile Include="src\graphics\buffers\VertexBuffer.cpp" />
+    <ClCompile Include="src\utilities\vsGLInfoLib.cpp" />
+    <ClCompile Include="src\application\Widget.cpp" />
+    <ClCompile Include="vendor\imgui\imgui.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_impl_sdl_gl3.cpp" />
+    <ClCompile Include="vendor\nfd\nfd_common.c" />
+    <ClCompile Include="vendor\nfd\nfd_win.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\application\SamplePlayer.h" />
+    <ClInclude Include="src\application\states\BeginState.h" />
+    <ClInclude Include="src\application\states\CreditsState.h" />
+    <ClInclude Include="src\application\states\EndState.h" />
+    <ClInclude Include="src\application\states\GuideState.h" />
+    <ClInclude Include="src\application\states\MenuState.h" />
+    <ClInclude Include="src\application\states\PlayState.h" />
+    <ClInclude Include="src\application\states\StoryState.h" />
+    <ClInclude Include="src\graphics\shaders\UniformBlocks.h" />
+    <ClInclude Include="src\managers\FileManager.h" />
+    <ClInclude Include="src\managers\ReaderManager.h" />
+    <ClInclude Include="src\managers\InterfaceManager.h" />
+    <ClInclude Include="src\memory\Allocator.h" />
+    <ClInclude Include="src\memory\Memory.h" />
+    <ClInclude Include="src\physics\AABounds2D.h" />
+    <ClInclude Include="src\physics\AABounds3D.h" />
+    <ClInclude Include="src\managers\AudioManager.h" />
+    <ClInclude Include="src\application\Background.h" />
+    <ClInclude Include="src\cache\BufferCache.h" />
+    <ClInclude Include="src\application\Button.h" />
+    <ClInclude Include="src\graphics\Camera.h" />
+    <ClInclude Include="src\application\Cube.h" />
+    <ClInclude Include="src\application\Entity.h" />
+    <ClInclude Include="src\graphics\shaders\EntityShader.h" />
+    <ClInclude Include="src\application\states\FiniteStateMachine.h" />
+    <ClInclude Include="src\cache\FontCache.h" />
+    <ClInclude Include="src\graphics\buffers\FrameBuffer.h" />
+    <ClInclude Include="src\graphics\Frustum.h" />
+    <ClInclude Include="src\application\GameComponent.h" />
+    <ClInclude Include="src\managers\GameManager.h" />
+    <ClInclude Include="src\application\GameObject.h" />
+    <ClInclude Include="src\application\states\GameState.h" />
+    <ClInclude Include="src\graphics\buffers\IndexBuffer.h" />
+    <ClInclude Include="src\managers\InputManager.h" />
+    <ClInclude Include="src\application\Interface.h" />
+    <ClInclude Include="src\graphics\shaders\InterfaceShader.h" />
+    <ClInclude Include="src\application\Inventory.h" />
+    <ClInclude Include="src\application\InventoryItem.h" />
+    <ClInclude Include="src\graphics\Light.h" />
+    <ClInclude Include="src\utilities\EventHandler.h" />
+    <ClInclude Include="src\utilities\Log.h" />
+    <ClInclude Include="src\utilities\MainframeTracker.h" />
+    <ClInclude Include="src\graphics\Material.h" />
+    <ClInclude Include="src\utilities\Maths.h" />
+    <ClInclude Include="src\application\Minimap.h" />
+    <ClInclude Include="src\application\MinimapWidget.h" />
+    <ClInclude Include="src\graphics\Model.h" />
+    <ClInclude Include="src\utilities\NoCopyOrAssignment.h" />
+    <ClInclude Include="src\utilities\ObjLoader.h" />
+    <ClInclude Include="src\utilities\PerformanceTimer.h" />
+    <ClInclude Include="src\physics\Picker.h" />
+    <ClInclude Include="src\application\Player.h" />
+    <ClInclude Include="src\application\states\EditState.h" />
+    <ClInclude Include="src\application\Primitive.h" />
+    <ClInclude Include="src\application\Quad.h" />
+    <ClInclude Include="src\graphics\buffers\RenderBuffer.h" />
+    <ClInclude Include="src\graphics\buffers\RenderTarget.h" />
+    <ClInclude Include="src\managers\ResourceManager.h" />
+    <ClInclude Include="src\managers\ScreenManager.h" />
+    <ClInclude Include="src\graphics\shaders\Shader.h" />
+    <ClInclude Include="src\utilities\Singleton.h" />
+    <ClInclude Include="src\application\Skybox.h" />
+    <ClInclude Include="src\graphics\shaders\SkyboxShader.h" />
+    <ClInclude Include="src\application\Sprite.h" />
+    <ClInclude Include="src\utilities\String.h" />
+    <ClInclude Include="vendor\stb_image.h" />
+    <ClInclude Include="src\application\Terrain.h" />
+    <ClInclude Include="src\graphics\shaders\TerrainShader.h" />
+    <ClInclude Include="src\graphics\Text.h" />
+    <ClInclude Include="src\graphics\shaders\TextShader.h" />
+    <ClInclude Include="src\graphics\Texture.h" />
+    <ClInclude Include="src\cache\TextureCache.h" />
+    <ClInclude Include="src\graphics\TexturePack.h" />
+    <ClInclude Include="src\utilities\Timer.h" />
+    <ClInclude Include="src\utilities\Timestep.h" />
+    <ClInclude Include="src\utilities\Tools.h" />
+    <ClInclude Include="src\physics\Transform.h" />
+    <ClInclude Include="src\graphics\buffers\UniformBlocks.h" />
+    <ClInclude Include="src\graphics\buffers\UniformBuffer.h" />
+    <ClInclude Include="src\graphics\buffers\VertexArray.h" />
+    <ClInclude Include="src\graphics\buffers\VertexBuffer.h" />
+    <ClInclude Include="src\utilities\vsGLInfoLib.h" />
+    <ClInclude Include="src\application\Widget.h" />
+    <ClInclude Include="vendor\imgui\imconfig.h" />
+    <ClInclude Include="vendor\imgui\imgui.h" />
+    <ClInclude Include="vendor\imgui\imgui_impl_sdl_gl3.h" />
+    <ClInclude Include="vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="vendor\imgui\stb_rect_pack.h" />
+    <ClInclude Include="vendor\imgui\stb_textedit.h" />
+    <ClInclude Include="vendor\imgui\stb_truetype.h" />
+    <ClInclude Include="vendor\nfd\common.h" />
+    <ClInclude Include="vendor\nfd\nfd.h" />
+    <ClInclude Include="vendor\nfd\nfd_common.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\entityFragmentShader.frag" />
+    <None Include="Assets\Shaders\entityVertexShader.vert" />
+    <None Include="Assets\Shaders\interfaceFragmentShader.frag" />
+    <None Include="Assets\Shaders\interfaceVertexShader.vert" />
+    <None Include="Assets\Shaders\skyboxFragmentShader.frag" />
+    <None Include="Assets\Shaders\skyboxVertexShader.vert" />
+    <None Include="Assets\Shaders\terrainFragmentShader.frag" />
+    <None Include="Assets\Shaders\terrainVertexShader.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
